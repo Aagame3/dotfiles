@@ -155,7 +155,7 @@ require'nvim-treesitter.configs'.setup {
   },
 }
 require'compe'.setup {
-  enabled = false;
+  enabled = true;
   autocomplete = true;
   debug = false;
   min_length = 1;
