@@ -1,7 +1,7 @@
 #Set mod to super
 set $mod Mod4
 
-set $rofi ~/codes/rofi/launch.sh
+set $rofi ~/.config/rofi/launch.sh
 
 # Turn borders off
 for_window [class="^.*"] border pixel 0
@@ -32,9 +32,9 @@ exec --no-startup-id nm-applet
 
 # Use pactl to adjust volume in PulseAudio.
 set $refresh_i3status killall -SIGUSR1 i3status
-bindsym XF86AudioRaiseVolume exec --no-startup-id ~/codes/dunstVolume.sh 5%+ unmute
-bindsym XF86AudioLowerVolume exec --no-startup-id ~/codes/dunstVolume.sh 5%- unmute
-bindsym XF86AudioMute exec --no-startup-id ~/codes/dunstVolume.sh toggle
+bindsym XF86AudioRaiseVolume exec --no-startup-id ~/.config/rofi/dunstVolume.sh 5%+ unmute
+bindsym XF86AudioLowerVolume exec --no-startup-id ~/.config/rofi/dunstVolume.sh 5%- unmute
+bindsym XF86AudioMute exec --no-startup-id ~/.config/rofi/dunstVolume.sh toggle
 bindsym XF86AudioMicMute exec --no-startup-id pactl set-source-mute @DEFAULT_SOURCE@ toggle && $refresh_i3status
 
 # Media player controls
@@ -55,7 +55,7 @@ bindsym $mod+Shift+q kill
 # Start rofi with appmenu and tabmenu
 bindsym $mod+space exec rofi -show drun -hide-scrollbar -lines 3 -eh 1 -width 40 -location 8 -xoffset 170 -yoffset 70 -padding 30 -disable-history -font "RobotoMono 18"
 
-bindsym $mod+Shift+e exec ~/codes/rofi/rofi-close.sh
+bindsym $mod+Shift+e exec ~/.config/rofi/rofi-close.sh
 # change focus
 bindsym $mod+j focus left
 bindsym $mod+k focus down
