@@ -4,3 +4,4 @@
 **/plugged
 *.kate-swp
 *.swp
+.gitignore
