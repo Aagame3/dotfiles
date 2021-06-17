@@ -1,4 +1,4 @@
-# Luke's config for the Zoomer Shell
+# zsh config
 
 zstyle ':completion:*' matcher-list 'm:{a-zA-Z}={A-Za-z}'
 setopt MENU_COMPLETE
