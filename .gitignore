@@ -1,7 +1,8 @@
 *
 !*.*
 !*/
-**/plugged
+plugged
+autoload
 *.kate-swp
 *.swp
 .gitignore
