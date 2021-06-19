@@ -53,7 +53,7 @@ bindsym $mod+Return exec st
 bindsym $mod+Shift+q kill
 
 # Start rofi with appmenu and tabmenu
-bindsym $mod+space exec rofi -show drun -hide-scrollbar -lines 3 -eh 1 -width 40 -location 8 -xoffset 170 -yoffset 70 -padding 30 -disable-history -font "RobotoMono 18"
+bindsym $mod+space exec rofi -show drun -hide-scrollbar -lines 5 -eh 1 -width 40 -location 8 -xoffset 170 -yoffset 70 -padding 30 -disable-history -font "Tamzen 20"
 
 bindsym $mod+Shift+e exec ~/.config/rofi/rofi-close.sh
 # change focus

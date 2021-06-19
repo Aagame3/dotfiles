@@ -3,6 +3,7 @@
 !*/
 plugged
 autoload
+!config
 *.kate-swp
 *.swp
 .gitignore
