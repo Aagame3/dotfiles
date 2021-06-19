@@ -6,3 +6,4 @@ FILE=$(ssh pi@apli-rb $COMMAND)
 
 scp -i /home/aapeli/.ssh/id_rsa pi@apli-rb:~/wallpapers/$DIR/$FILE /tmp/$FILE
 DISPLAY=:0 feh --bg-scale /tmp/$FILE
+betterlockscreen -u /tmp/$FILE
