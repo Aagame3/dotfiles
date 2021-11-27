@@ -76,15 +76,13 @@ bindkey -s '^o' 'lfcd\n'  # zsh
 
 setopt autocd
 
-source /home/aapeli/.local/bin/virtualenvwrapper.sh
-
 # Get color support for 'less'
 export LESS="--RAW-CONTROL-CHARS"
 
 # Use colors for less, man, etc.
 [[ -f ~/.LESS_TERMCAP ]] && . ~/.LESS_TERMCAP
 
-export PATH="$PATH:/home/aapeli/codes:/home/aapeli/.local/bin/"
+export PATH="$PATH:/home/aapeli/codes:/home/aapeli/.local/bin/:/home/aapeli/.emacs.d/bin"
 export HISTFILE="/home/aapeli/.zhistory"
 export SAVEHIST=10000
 export HISTSIZE=100
@@ -98,6 +96,6 @@ export FILE=nnn
 
 
 # Load zsh-syntax-highlighting; should be last.
-source /usr/share/zsh/plugins/fast-syntax-highlighting/fast-syntax-highlighting.plugin.zsh 2>/dev/null
+source /usr/share/zsh/plugins/fast-syntax-highlighting.plugin.zsh 2>/dev/null
 source /usr/share/zsh/plugins/colored-man/colored-man.zsh 2>/dev/null
 source /usr/share/zsh/plugins/git/git.zsh 2>/dev/null
