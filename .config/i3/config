@@ -201,3 +201,4 @@ exec discord
 exec_always --no-startup-id pkill picom; picom
 exec_always --no-startup-id pkill dunst; dunst
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id xrandr --output DisplayPort-2 --mode 1920x1080 --rate 144
