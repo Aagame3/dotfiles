@@ -36,6 +36,7 @@ set go=a
 set mouse=a
 set nohlsearch
 set clipboard+=unnamedplus
+set guicursor=a:ver25
 
 " Some basics:
 	nnoremap c "_c
