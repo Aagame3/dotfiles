@@ -146,7 +146,7 @@ bindsym $mod+Shift+0 move container to workspace number $ws10
 assign [class="Firefox"] $ws1
 assign [class="VSCodium"] $ws5
 assign [class="discord"] $ws4
-assign [class="kate"] $ws5
+assign [class="Steam"] $ws5
 for_window [class="Spotify"] move to workspace $ws3
 
 # reload the configuration file
@@ -196,6 +196,7 @@ bindsym $mod+Shift+w exec ~/.config/scripts/wallpapersetter.sh
 exec spotify
 exec firefox
 exec discord
+exec Steam
 
 # Startup daemons for compositor and status bar
 exec_always --no-startup-id pkill picom; picom
