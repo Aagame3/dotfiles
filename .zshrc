@@ -113,5 +113,12 @@ export EDITOR='vim'
 # alias ohmyzsh="mate ~/.oh-my-zsh"
 [ -f "$HOME/.config/aliasrc" ] && source "$HOME/.config/aliasrc"
 
+#download videos
+dlvd () {
+	readonly link=${1:?"Give link."}
+	readonly name=${2:?"Give name."}
+	youtube-dl "$link" -o "~/Pictures/dumb/$name.%(ext)s"
+}
+
 # To customize prompt, run `p10k configure` or edit ~/.p10k.zsh.
 [[ ! -f ~/.p10k.zsh ]] || source ~/.p10k.zsh
