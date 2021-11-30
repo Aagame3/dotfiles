@@ -196,7 +196,7 @@ bindsym $mod+Shift+w exec ~/.config/scripts/wallpapersetter.sh
 exec spotify
 exec firefox
 exec discord
-exec Steam
+exec steam
 
 # Startup daemons for compositor and status bar
 exec_always --no-startup-id pkill picom; picom
