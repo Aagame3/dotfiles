@@ -43,6 +43,10 @@ bindsym XF86AudioPause exec playerctl pause
 bindsym XF86AudioNext exec playerctl next
 bindsym XF86AudioPrev exec playerctl previous
 
+#bindsym Print exec spectactle -rbc
+bindsym Print exec spectacle -rbc
+bindsym $mod+Print exec spectacle -g
+
 # Use Mouse+$mod to drag floating windows to their wanted position
 floating_modifier $mod
 
@@ -148,6 +152,7 @@ assign [class="VSCodium"] $ws5
 assign [class="discord"] $ws4
 assign [class="Steam"] $ws5
 for_window [class="Spotify"] move to workspace $ws3
+for_window [instance="origin.exe"] floating enable
 
 # reload the configuration file
 bindsym $mod+Shift+c reload
