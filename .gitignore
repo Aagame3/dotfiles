@@ -7,3 +7,4 @@ autoload
 *.kate-swp
 *.swp
 .gitignore
+img
