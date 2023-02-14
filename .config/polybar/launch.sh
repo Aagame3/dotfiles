@@ -1,4 +1,4 @@
 #!/bin/bash
 
 pkill polybar
-polybar -r mainbar-i3 &
+polybar -r mainbar-openbox &

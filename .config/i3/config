@@ -193,11 +193,9 @@ bindsym $mod+Shift+f exec firefox
 exec ~/.config/scripts/wallpapersetter.sh
 bindsym $mod+Shift+w exec ~/.config/scripts/wallpapersetter.sh
 
-exec spotify
-exec firefox
-exec discord
 
 # Startup daemons for compositor and status bar
 exec_always --no-startup-id pkill picom; picom
 exec_always --no-startup-id pkill dunst; dunst
 exec_always --no-startup-id ~/.config/polybar/launch.sh
+exec_always --no-startup-id xfce4-power-manager
