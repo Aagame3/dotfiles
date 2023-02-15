@@ -1,5 +1,5 @@
 # Dotfiles
-My dotfiles for my current i3 config on my endeavourOS powered Thinkpad
+My dotfiles for my current i3 config on my EndeavourOS powered Thinkpad and for my desktop PC which has gnome for dual monitor reason. Everything else is still used the same on both systems.
 
 # Images
 On the TODO-list still :/
