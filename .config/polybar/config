@@ -216,7 +216,7 @@ font-3 = "Font Awesome 5 Brands:size=10;0"
 
 modules-left = ewmh xwindow
 modules-center = release kernel
-modules-right =  battery cpu1 date
+modules-right = battery cpu2 date
 
 tray-detached = false
 tray-offset-x = 0
@@ -314,9 +314,6 @@ foreground = ${colors.foreground}
 line-size = 2
 line-color = #f00
 
-wm-restack = bspwm
-override-redirect = true
-
 ; Enable support for inter-process messaging
 ; See the Messaging wiki page for more details.
 enable-ipc = true
@@ -325,7 +322,7 @@ border-size = 0
 ;border-left-size = 0
 ;border-right-size = 25
 ;border-top-size = 0
-;border-bottom-size = 25
+border-bottom-size = 0
 border-color = #00000000
 
 padding-left = 1
@@ -341,9 +338,9 @@ font-2 = "Font Awesome 5 Free:style=Regular:pixelsize=8;1"
 font-3 = "Font Awesome 5 Free:style=Solid:pixelsize=8;1"
 font-4 = "Font Awesome 5 Brands:pixelsize=8;1"
 
-modules-left = bspwm xwindow
+modules-left = ewmh xwindow
 modules-center =
-modules-right = arrow1 networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow2 pavolume arrow3 arch-aur-updates arrow2 date
+modules-right = networkspeedup networkspeeddown arrow2 memory2 arrow3 cpu2 arrow2 date
 
 tray-detached = false
 tray-offset-x = 0

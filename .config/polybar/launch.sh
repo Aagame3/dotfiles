@@ -1,4 +1,4 @@
 #!/bin/bash
 
 pkill polybar
-polybar -r mainbar-openbox &
+polybar -r mainbar-bspwm &
