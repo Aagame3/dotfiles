@@ -8,3 +8,4 @@ autoload
 *.swp
 .gitignore
 img
+packer_compiled.lua
