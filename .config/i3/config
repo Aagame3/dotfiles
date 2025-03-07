@@ -47,13 +47,13 @@ bindsym $mod+Print exec spectacle -g
 floating_modifier $mod
 
 # start a terminal
-bindsym $mod+Return exec st
+bindsym $mod+Return exec st 
 
 # kill focused window
 bindsym $mod+Shift+q kill
 
 # Start rofi with appmenu and tabmenu
-bindsym $mod+space exec rofi -show drun -hide-scrollbar -lines 5 -eh 1 -width 40 -location 8 -xoffset 170 -yoffset 70 -padding 30 -disable-history -font "Tamzen 20"
+bindsym $mod+space exec rofi -show drun -hide-scrollbar -lines 5 -eh 1 -width 40 -location 8 -xoffset 170 -yoffset 70 -padding 30 -disable-history -font "Iosevka Term NFP 20"
 
 bindsym $mod+Shift+e exec ~/.config/rofi/rofi-close.sh
 # change focus
@@ -91,7 +91,7 @@ bindsym $mod+f fullscreen toggle
 
 # change container layout (stacked, tabbed, toggle split)
 bindsym $mod+s layout stacking
-bindsym $mod+w layout tabbed
+#bindsym $mod+w layout tabbed
 bindsym $mod+e layout toggle split
 
 # toggle tiling / floating
@@ -143,7 +143,7 @@ bindsym $mod+Shift+8 move container to workspace number $ws8
 bindsym $mod+Shift+9 move container to workspace number $ws9
 bindsym $mod+Shift+0 move container to workspace number $ws10
 
-assign [class="Firefox"] $ws1
+assign [class="firefox"] $ws1
 assign [class="VSCodium"] $ws5
 assign [class="discord"] $ws4
 assign [class="kate"] $ws5
@@ -188,15 +188,18 @@ bindsym $mod+r mode "resize"
  #       status_command i3status
 #}
 
-bindsym $mod+Shift+x exec betterlockscreen -l
-bindsym $mod+Shift+f exec firefox
+bindsym $mod+Shift+x exec i3lock 
+bindsym $mod+Shift+f exec firefox 
+bindsym $mod+w       exec st zsh -c ranger
 
-exec ~/.config/scripts/wallpapersetter.sh
-bindsym $mod+Shift+w exec ~/.config/scripts/wallpapersetter.sh
+#exec feh --bg-scale ~/Pictures/fill.png 
+bindsym $mod+Shift+w exec ~/scripts/walls.sh
 
 # Startup daemons for compositor and status bar
+#exec_always --no-startup-id pkill picom; picom
 exec_always --no-startup-id pkill picom; picom
-exec_always --no-startup-id pkill picom; picom
+exec_always --no-startup-id firefox;
 exec_always --no-startup-id pkill dunst; dunst
 exec_always --no-startup-id ~/.config/polybar/launch.sh
 exec_always --no-startup-id xfce4-power-manager
+exec_always --no-startup-id ~/scripts/walls.sh 
